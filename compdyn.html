@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>新能源网</title>
+
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <meta name="keywords" content="新能源网">
+    <meta name="description" content="新能源网">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+    <!-- 自己的样式 -->
+    <link rel="stylesheet/less" href="static/css/all.less">
+    <link rel="stylesheet/less" href="static/css/compdyn.less">
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/less.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部内容 -->
+    <header id="header">
+        <nav class="header-main navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand icon" href="#">
+                <img src="static/image/en-4.jpg" width="40px">
+                <span>新能源网</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">能源首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member.html">能源简介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entrepren.html">能源创业者</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="supplier.html">能源供应商</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">公司动态</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容 -->
+    <div class="compdyn">
+        <!-- <div class="container">
+            <div class="compdyn-item">
+                <div class="compdyn-item-left">
+                    <a href="#">
+                        <h3 class="left-title">朗普掌柜的每一款产品都是有温度的</h3>
+                    </a>
+                    <div class="left-txtdate">
+                        <a href="#">
+                            <p class="left-txt">
+                                在公域流量红利逐渐耗尽的后电商时代，基于微信生态圈的社交电商所带来的裂变和爆发式增长，正在掀起另一场创业的风暴。越来越多的人争相投身到社交电商的急流之中，有的只是单纯地为了吸引投资；有的是真的打算给一筹莫展的电商市场带来崭新的血液。无论他们的动机如何，都将社交电商这个行业推到了时代的风口浪尖。
+                            </p>
+                        </a>
+                        <p class="left-date">2022-10-15 09:19:50</p>
+                    </div>
+                </div>
+                <div class="compdyn-item-right">
+                    <a href="#">
+                        <img class="right-img" src="static/image/5d8eb50e70116.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container footer-main">
+            <div class="left">
+                <div class="left-main">
+                    <a href="#" target="_back">公司网站</a>
+                    <a href="#" target="_blank">加入能源</a>
+                    <a href="#">服务协议</a>
+                    <a href="#">隐私协议</a>
+                </div>
+                <p class="address">公司名称：新能源科技有限公司</p>
+                <p class="address">公司电话：000-000-0000</p>
+                <p class="address">公司地址：中国广州市新能源科技有限公司</p>
+                <p class="address">新能源科技经营许可证：粤B2-20221319 <a href="#" class="ban" target="_blank">粤ICP备20221020-5号</a>
+                </p>
+                <p><span class="beiantu">更多模板：<a href="http://www.cssmoban.com/" target="_blank">模板之家</a></span></p>
+            </div>
+            <div class="right">
+                <p class="wx">官方微信</p>
+                <img src="static/image/en-4.jpg" alt="微信二维码">
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    // 主要内容
+    (function () {
+        var str = "";
+        var titles = ["新能源的每一款产品都是有温度的"]
+        var contents = ["在公域流量红利逐渐耗尽的后电商时代，基于微信生态圈的社交电商所带来的裂变和爆发式增长，正在掀起另一场创业的风暴。越来越多的人争相投身到社交电商的急流之中，有的只是单纯地为了吸引投资；有的是真的打算给一筹莫展的电商市场带来崭新的血液。无论他们的动机如何，都将社交电商这个行业推到了时代的风口浪尖。"]
+        var dates = ["2022-10-15 09:19:50"]
+        for (var i = 0; i < 6; i++) {
+            str += `<div class="container">
+            <div class="compdyn-item">
+                <div class="compdyn-item-left">
+                    <a href="#">
+                        <h3 class="left-title">${titles}</h3>
+                    </a>
+                    <div class="left-txtdate">
+                        <a href="#">
+                            <p class="left-txt">
+                                ${contents}
+                            </p>
+                        </a>
+                        <p class="left-date">${dates}</p>
+                    </div>
+                </div>
+                <div class="compdyn-item-right">
+                    <a href="#">
+                        <img class="right-img" src="static/image/bank.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>`;
+        }
+        $(".compdyn").html(str);
+    })();
+</script>
+
+</html>
